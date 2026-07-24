@@ -1,0 +1,796 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ZIYY OFFICIAL</title>
+
+<meta name="theme-color" content="#2563eb">
+<meta name="description" content="Website resmi ZIYY OFFICIAL">
+
+<style>
+
+:root{
+--bg:url("https://files.catbox.moe/dpsf3c.jpg");
+--logo:url("https://files.catbox.moe/hnjny4.png");
+
+--blue:#2563eb;
+--blue2:#3b82f6;
+--blue3:#60a5fa;
+--white:#ffffff;
+--glass:rgba(255,255,255,.08);
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:white;
+overflow-x:hidden;
+min-height:100vh;
+}
+
+/* Background */
+
+.background{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background-image:var(--bg);
+background-size:cover;
+background-position:center;
+filter:blur(20px) brightness(.45);
+transform:scale(1.2);
+z-index:-5;
+}
+
+.overlay{
+position:fixed;
+width:100%;
+height:100%;
+background:
+linear-gradient(
+135deg,
+rgba(37,99,235,.55),
+rgba(59,130,246,.30),
+rgba(0,0,0,.55)
+);
+z-index:-4;
+}
+
+/* Aurora */
+
+.aurora{
+position:fixed;
+width:600px;
+height:600px;
+border-radius:50%;
+background:rgba(59,130,246,.18);
+filter:blur(120px);
+animation:aurora 18s linear infinite alternate;
+z-index:-3;
+}
+
+@keyframes aurora{
+
+0%{
+transform:translate(-100px,-100px);
+}
+
+50%{
+transform:translate(300px,150px);
+}
+
+100%{
+transform:translate(-50px,400px);
+}
+
+}
+
+/* Loading */
+
+#loading{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+background:#071223;
+z-index:9999;
+}
+
+.loader{
+width:90px;
+height:90px;
+border-radius:50%;
+border:6px solid rgba(255,255,255,.15);
+border-top:6px solid var(--blue3);
+animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+.loadingText{
+margin-top:18px;
+letter-spacing:4px;
+}
+
+/* Scroll */
+
+#progress{
+position:fixed;
+top:0;
+left:0;
+height:4px;
+width:0%;
+background:linear-gradient(90deg,#60a5fa,#ffffff);
+z-index:99999;
+}
+
+/* Container */
+
+.container{
+max-width:900px;
+margin:auto;
+padding:120px 20px 50px;
+}
+
+/* Card */
+
+.card{
+
+background:var(--glass);
+
+backdrop-filter:blur(18px);
+
+border-radius:25px;
+
+padding:35px;
+
+border:1px solid rgba(255,255,255,.15);
+
+box-shadow:0 0 35px rgba(37,99,235,.25);
+
+animation:float 5s ease-in-out infinite;
+
+text-align:center;
+
+}
+
+@keyframes float{
+
+50%{
+
+transform:translateY(-8px);
+
+}
+
+}
+
+/* Profile */
+
+.profile{
+
+width:180px;
+
+height:180px;
+
+margin:auto;
+
+border-radius:50%;
+
+background-image:var(--logo);
+
+background-size:cover;
+
+background-position:center;
+
+border:5px solid rgba(255,255,255,.6);
+
+box-shadow:0 0 35px rgba(59,130,246,.7);
+
+animation:zoom 4s ease-in-out infinite;
+
+}
+
+@keyframes zoom{
+
+50%{
+
+transform:scale(1.04);
+
+}
+
+}
+
+h1{
+
+margin-top:20px;
+
+font-size:34px;
+
+}
+
+.store{
+
+margin-top:10px;
+
+color:#bfe3ff;
+
+font-size:18px;
+
+letter-spacing:2px;
+
+}
+
+.info{
+
+margin-top:35px;
+
+display:grid;
+
+gap:15px;
+
+}
+
+.box{
+
+background:rgba(255,255,255,.08);
+
+padding:18px;
+
+border-radius:15px;
+
+transition:.3s;
+
+}
+
+.box:hover{
+
+transform:translateY(-6px);
+
+background:rgba(255,255,255,.14);
+
+}
+
+.box h3{
+
+color:#9fd4ff;
+
+margin-bottom:6px;
+
+}
+
+.typing{
+
+margin-top:35px;
+
+line-height:1.8;
+
+font-style:italic;
+
+min-height:90px;
+
+}
+
+footer{
+
+margin:50px 0;
+
+text-align:center;
+
+opacity:.8;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:7px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#3b82f6;
+
+border-radius:20px;
+
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="background"></div>
+<div class="overlay"></div>
+<div class="aurora"></div>
+
+<div id="progress"></div>
+
+<div id="loading">
+    <div class="loader"></div>
+    <div class="loadingText">LOADING WEBSITE</div>
+</div>
+
+<div class="container">
+
+<div class="card">
+
+<div class="profile"></div>
+
+<h1>Ziyad Patahudin</h1>
+
+<div class="store">
+ZIYY OFFICIAL
+</div>
+
+<div class="info">
+
+<div class="box">
+<h3>Nama Lengkap</h3>
+<p>Ziyad Patahudin</p>
+</div>
+
+<div class="box">
+<h3>Tanggal Lahir</h3>
+<p>26 Maret 2012</p>
+</div>
+
+<div class="box">
+<h3>Asal Kota</h3>
+<p>Cikarang Utara</p>
+</div>
+
+<div class="box">
+<h3>Umur</h3>
+<p id="umur">Menghitung...</p>
+</div>
+
+<div class="box">
+<h3>Hari & Tanggal</h3>
+<p id="tanggal">Memuat...</p>
+</div>
+
+<div class="box">
+<h3>Jam</h3>
+<p id="jam">00:00:00</p>
+</div>
+
+<div class="box">
+<h3>Status Website</h3>
+<p style="color:#7CFF9E;">ONLINE</p>
+</div>
+
+<div class="box">
+<h3>Lama Membuka Website</h3>
+<p id="timer">00:00:00</p>
+</div>
+
+</div>
+
+<div style="margin-top:35px;font-size:17px;line-height:1.8;">
+Terima kasih karena sudah membuka website
+<b>ZIYY OFFICIAL</b>.
+Semoga website ini bermanfaat dan memberikan pengalaman yang menyenangkan.
+</div>
+
+<div class="typing" id="typing"></div>
+
+</div>
+
+<footer>
+© 2026 ZIYY OFFICIAL • All Rights Reserved
+</footer>
+
+</div>
+<script>
+
+// =======================
+// Loading Screen
+// =======================
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loading").style.opacity="0";
+
+setTimeout(()=>{
+
+document.getElementById("loading").style.display="none";
+
+},500);
+
+},1200);
+
+});
+
+// =======================
+// Typing Effect
+// =======================
+
+const text=`Seseorang akan sadar dalam dua hal, diubah oleh suatu nasehat atau diubah oleh suatu kejadian.
+
+-ziyyofficial`;
+
+let index=0;
+
+function typing(){
+
+if(index<text.length){
+
+document.getElementById("typing").innerHTML+=text.charAt(index);
+
+index++;
+
+setTimeout(typing,45);
+
+}
+
+}
+
+typing();
+
+// =======================
+// Hitung Umur
+// =======================
+
+(function(){
+
+const lahir=new Date(2012,2,26);
+
+const sekarang=new Date();
+
+let umur=sekarang.getFullYear()-lahir.getFullYear();
+
+if(
+
+sekarang.getMonth()<lahir.getMonth()
+
+||
+
+(
+
+sekarang.getMonth()==lahir.getMonth()
+
+&&
+
+sekarang.getDate()<lahir.getDate()
+
+)
+
+){
+
+umur--;
+
+}
+
+document.getElementById("umur").innerHTML=umur+" Tahun";
+
+})();
+
+// =======================
+// Jam
+// =======================
+
+function updateJam(){
+
+const now=new Date();
+
+document.getElementById("jam").innerHTML=
+
+now.toLocaleTimeString("id-ID");
+
+}
+
+setInterval(updateJam,1000);
+
+updateJam();
+
+// =======================
+// Hari & Tanggal
+// =======================
+
+function updateTanggal(){
+
+const now=new Date();
+
+const hari=[
+
+"Minggu","Senin","Selasa",
+
+"Rabu","Kamis","Jumat","Sabtu"
+
+];
+
+const bulan=[
+
+"Januari","Februari","Maret",
+
+"April","Mei","Juni",
+
+"Juli","Agustus","September",
+
+"Oktober","November","Desember"
+
+];
+
+document.getElementById("tanggal").innerHTML=
+
+hari[now.getDay()]+" , "+
+
+now.getDate()+" "+
+
+bulan[now.getMonth()]+" "+
+
+now.getFullYear();
+
+}
+
+updateTanggal();
+
+// =======================
+// Timer Website
+// =======================
+
+let detik=0;
+
+setInterval(()=>{
+
+detik++;
+
+let h=Math.floor(detik/3600);
+
+let m=Math.floor((detik%3600)/60);
+
+let s=detik%60;
+
+document.getElementById("timer").innerHTML=
+
+String(h).padStart(2,"0")+":"+
+
+String(m).padStart(2,"0")+":"+
+
+String(s).padStart(2,"0");
+
+},1000);
+
+// =======================
+// Scroll Progress
+// =======================
+
+window.addEventListener("scroll",()=>{
+
+let total=
+
+document.documentElement.scrollHeight-
+
+document.documentElement.clientHeight;
+
+let scroll=
+
+(document.documentElement.scrollTop/total)*100;
+
+document.getElementById("progress").style.width=
+
+scroll+"%";
+
+});
+
+// =======================
+// Fade In Card
+// =======================
+
+const card=document.querySelector(".card");
+
+card.style.opacity="0";
+
+card.style.transform="translateY(40px)";
+
+setTimeout(()=>{
+
+card.style.transition="1s";
+
+card.style.opacity="1";
+
+card.style.transform="translateY(0)";
+
+},700);
+// =======================
+// Parallax Background
+// =======================
+
+window.addEventListener("scroll",()=>{
+
+const bg=document.querySelector(".background");
+
+bg.style.transform="scale(1.2) translateY("+(window.scrollY*0.15)+"px)";
+
+});
+
+// =======================
+// Aurora Bergerak
+// =======================
+
+const aurora=document.querySelector(".aurora");
+
+let angle=0;
+
+setInterval(()=>{
+
+angle+=0.3;
+
+aurora.style.transform=
+
+`translate(${Math.sin(angle/10)*120}px,${Math.cos(angle/10)*80}px)`;
+
+},30);
+
+// =======================
+// Efek Bintang
+// =======================
+
+for(let i=0;i<40;i++){
+
+const star=document.createElement("div");
+
+star.style.position="fixed";
+
+star.style.width="2px";
+
+star.style.height="2px";
+
+star.style.borderRadius="50%";
+
+star.style.background="#ffffff";
+
+star.style.left=Math.random()*100+"vw";
+
+star.style.top=Math.random()*100+"vh";
+
+star.style.opacity=Math.random();
+
+star.style.pointerEvents="none";
+
+star.style.animation=
+
+"twinkle "+(2+Math.random()*4)+"s infinite";
+
+document.body.appendChild(star);
+
+}
+
+const starStyle=document.createElement("style");
+
+starStyle.innerHTML=`
+@keyframes twinkle{
+0%,100%{opacity:.2;transform:scale(1);}
+50%{opacity:1;transform:scale(1.8);}
+}
+`;
+
+document.head.appendChild(starStyle);
+
+// =======================
+// Efek Meteor
+// =======================
+
+function meteor(){
+
+const m=document.createElement("div");
+
+m.style.position="fixed";
+
+m.style.width="120px";
+
+m.style.height="2px";
+
+m.style.background="linear-gradient(90deg,#fff,transparent)";
+
+m.style.top=Math.random()*40+"vh";
+
+m.style.left="-150px";
+
+m.style.transform="rotate(-20deg)";
+
+m.style.pointerEvents="none";
+
+m.style.zIndex="-1";
+
+document.body.appendChild(m);
+
+let x=-150;
+
+const move=setInterval(()=>{
+
+x+=18;
+
+m.style.left=x+"px";
+
+if(x>window.innerWidth+200){
+
+clearInterval(move);
+
+m.remove();
+
+}
+
+},16);
+
+}
+
+setInterval(meteor,9000);
+
+// =======================
+// Glow Foto Profil
+// =======================
+
+setInterval(()=>{
+
+document.querySelector(".profile").style.boxShadow=
+
+"0 0 "+(25+Math.random()*20)+"px rgba(59,130,246,.9)";
+
+},800);
+
+// =======================
+// Reveal Saat Scroll
+// =======================
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".box").forEach(box=>{
+
+box.style.opacity="0";
+
+box.style.transform="translateY(30px)";
+
+box.style.transition=".8s";
+
+observer.observe(box);
+
+});
+
+</script>
+
+</body>
+</html>
